@@ -25,3 +25,19 @@ Clone this repository and ensure `parsercodegen.c` and your test `.txt` input fi
 Open your terminal, navigate to the project directory, and compile the program using GCC:
 ```bash
 gcc parsercodegen.c
+```
+(This will generate an executable file, typically named a.out on Linux/macOS or a.exe on Windows).
+
+### 3. Run the Compiler
+Execute the compiled program while passing in your source code text file as an argument:
+```bash
+./a.out input.txt
+```
+## 📄 Output
+Upon a successful run, the compiler will provide two forms of output:
+
+### 1. Terminal Output: 
+Displays the generated Assembly Code (OP, L, M) and a detailed printout of the Symbol Table (Kind, Name, Value, Level, Address) directly in your terminal.
+
+### 2. Executable File: 
+Generates an elf.txt file in the same directory containing the raw virtual machine instructions generated from your input code.
